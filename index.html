@@ -1,53 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Multimedia</title>
+</head>
+<body><header>
+  <a href="#" class="logo">LOGO</a>
+  <div class="toggle" onclick="toggleMenu();"></div>
+  <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#testimonial">Testimonial</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+  <section class="banner">
+    <div class="textBx">
+      <h2>Zero Wasted</h2>
+      <h3>Adventure in The Neighborhood</h3>
+      <a href="#" class="btn">Ayo Mulai</a>
+    </div>
+  </section>
 
-    <section class="home">
-      <input type="checkbox" id="check">
-      <header>
+  <section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+    </div>
+    <div class="content">
+        <div class="contentBx w50">
+            <h3>Latar Belakang</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nam, nesciunt laudantium, magnam quisquam aliquid modi commodi debitis praesentium hic minima voluptatum facilis pariatur corporis ipsa, culpa voluptatem minus earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro minus beatae at! Accusantium sequi dolorum, sapiente praesentium sed sint asperiores vero est consectetur minus iusto alias voluptates vitae fugiat.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet quas nam praesentium, at veniam dolore est illum eaque dicta. Harum, a commodi. Ipsa, tempora molestiae. Sapiente expedita ab facilis!</p>
         </div>
-        <h2><a href="#" class="logo">Logo</a></h2>
-        <div class="navigation">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Info</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+        <div class="w50">
+            <img src="15181.jpg" class="img">
         </div>
-        <label for="check">
-        <i class="fas fa-bars menu-btn"></i>
-        <i class="fas fa-times close-btn"></i>
-        </label>
-      </header>
-      <div class="content">
-        <div class="info">
-          <h2>Zero Waste <br><span>Adventure In The Neighborhood</span></h2>
-          <a href="#" class="info-btn">More info</a>
-        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+  <div class="heading white">
+      <h2>Contact Us</h2>
+  </div>
+  <div class="content">
+      <div class="contactInfo">
+          <h3>Contact Info</h3>
+          <div class="contactInfoBx">
+              <div class="box">
+                  <div class="icon1">
+                      <i class="fa fa-map-marker"></i>
+                  </div>
+                  <div class="text">
+                      <h3>Address</h3>
+                      <p>Perumahan Griya Peganden Asri,<br>Manyar, Gresik,<br>60243</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon1">
+                      <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="text">
+                      <h3>Phone</h3>
+                      <p>088217153101</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon1">
+                      <i class="fa fa-envelope-o"></i>
+                  </div>
+                  <div class="text">
+                      <h3>Email</h3>
+                      <p>multimedia-kel1@gmail.com</p>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="formBx">
+          <form>
+              <h3>Message Me</h3>
+              <input type="text" name="" placeholder="Full Name">
+              <input type="email" name="" placeholder="Email">
+              <textarea placeholder="Your Message"></textarea>
+              <input type="submit" value="Send">
+          </form>
       </div>
-    </section>
+  </div>
+</section>
+<div class="copyright">
+  <p>Copyrigt © 2021 Multimedia Kelompok 1. All Right Reserved.</p>
+</div>
+<script type="text/javascript">
+  window.addEventListener('scroll', function(){
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+  });
 
-    <section class="about">
-        <div class="kiri">
-          <a href="">gambar</a>
-        </div>
-        <div class="kanan">
-          <h3><span>latar belakang</span></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla amet recusandae nisi beatae illo fugiat aperiam quas quo iusto odit rem perspiciatis facilis, numquam nesciunt voluptates reprehenderit aut ipsa praesentium?</p>
-        </div>
-    </section>
-
-  </body>
+  function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      menuToggle.classList.toggle('active');
+  }
+</script>
+</body>
 </html>
