@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
   <title>Multimedia</title>
 </head>
@@ -13,31 +14,30 @@
   <div class="toggle" onclick="toggleMenu();"></div>
   <ul class="menu">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#testimonial">Testimonial</a></li>
+      <li><a href="#latarBelakang">Latar Belakang</a></li>
+      <li><a href="#6R">6R</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="#team">Team</a></li>
       <li><a href="#contact">Contact</a></li>
   </ul>
 </header>
   <section class="banner">
-    <div class="textBx">
+    <div class="textBx" data-aos="zoom-in-left" data-aos-duration="2000">
       <h2>Zero Wasted</h2>
       <h3>Adventure in The Neighborhood</h3>
-      <a href="#" class="btn">Ayo Mulai</a>
+      <a href="#" class="btn">Ayo Mulai...</a>
     </div>
   </section>
 
-  <section class="about" id="about">
+  <section class="about" id="latarBelakang" >
     <div class="heading">
-        <h2>About Me</h2>
+        <h2>Latar Belakang</h2>
     </div>
     <div class="content">
-        <div class="contentBx w50">
-            <h3>Latar Belakang</h3>
+        <div class="contentBx w50" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nam, nesciunt laudantium, magnam quisquam aliquid modi commodi debitis praesentium hic minima voluptatum facilis pariatur corporis ipsa, culpa voluptatem minus earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro minus beatae at! Accusantium sequi dolorum, sapiente praesentium sed sint asperiores vero est consectetur minus iusto alias voluptates vitae fugiat.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet quas nam praesentium, at veniam dolore est illum eaque dicta. Harum, a commodi. Ipsa, tempora molestiae. Sapiente expedita ab facilis!</p>
         </div>
-        <div class="w50">
+        <div class="w50" data-aos="fade-left" data-aos-duration="1000">
             <img src="15181.jpg" class="img">
         </div>
     </div>
@@ -93,6 +93,8 @@
 <div class="copyright">
   <p>Copyrigt © 2021 Multimedia Kelompok 1. All Right Reserved.</p>
 </div>
+
+
 <script type="text/javascript">
   window.addEventListener('scroll', function(){
       var header = document.querySelector('header');
@@ -103,6 +105,10 @@
       var menuToggle = document.querySelector('.toggle');
       menuToggle.classList.toggle('active');
   }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>

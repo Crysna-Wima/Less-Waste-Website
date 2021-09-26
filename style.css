@@ -9,6 +9,9 @@
 section{
   padding: 100px;
 }
+
+
+/* Halaman Home */
 .banner{
   position: relative;
   min-height: 100vh;
@@ -19,9 +22,17 @@ section{
   justify-content: space-between;
   align-items: center;
 }
+.textBx{
+  background: rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+}
 .banner h2{
   font-size: 3em;
-  color: rgb(3, 92, 80);
+  color: rgb(8, 100, 5);
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -31,14 +42,14 @@ section{
 }
 .banner h3{
   font-size: 1.5em;
-  color: rgb(3, 92, 80);
+  color: rgb(245, 247, 245);
   font-weight: 500;
 }
 .btn{
   position: relative;
-  background: #fdfdfd;
+  background: #013007;
   display: inline-block;
-  color: aqua;
+  color: rgb(255, 255, 255);
   margin-top: 20px;
   padding: 10px 30px;
   font-size: 18px;
@@ -47,6 +58,9 @@ section{
   letter-spacing: 2px;
   font-weight: 500;
 }
+
+
+/* Navbar */
 header{
   position: fixed;
   top: 0;
@@ -98,6 +112,9 @@ header.sticky .menu{
 header.sticky ul li a{
     color: #111;
 }
+
+
+/* Latar Belakang */
 .heading{
   width: 100%;
   text-align: center;
@@ -119,9 +136,13 @@ header.sticky ul li a{
     min-width: 50%;
 }
 img{
-    max-width: 90%;
-    margin-top: -40px;
+    max-width: 80%;
+    margin-top: -30px;
+    margin-left: 30px;
 }
+
+
+/* Contact */
 .contact{
     background: rgb(1, 82, 68);
 }
@@ -201,6 +222,9 @@ img{
     color: #2196f3;
     margin-bottom: 0;
 }
+
+
+/* Footer */
 .copyright{
     background: rgb(3, 112, 131);
     color: #fff;
