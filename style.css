@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 section{
   padding: 100px;
@@ -150,7 +151,7 @@ img{
 }
 .container{
   position: relative;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   padding: 40px 0;
@@ -236,12 +237,27 @@ img{
   display: block;
 }
 .container .box .content h2{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .box .content p{
   font-size: 1.1em;
   color: #fff;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
+  line-height: 1.4em;
 }
-
+.container .box .content a{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+}
 
 /* Contact */
 .contact{
