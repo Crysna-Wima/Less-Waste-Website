@@ -1,198 +1,486 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css">
-  <title>Multimedia</title>
-</head>
-<body><header>
-  <a href="#" class="logo">LOGO</a>
-  <div class="toggle" onclick="toggleMenu();"></div>
-  <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#latarBelakang">Latar Belakang</a></li>
-      <li><a href="#Pengertian">Pengertian</a></li>
-      <li><a href="#re6">Kelebihan</a></li>
-      <li><a href="#solutions">Solutions</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-  </ul>
-</header>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Home -->
-<section class="banner">
-    <div class="textBx" data-aos="zoom-in-left" data-aos-duration="2000">
-      <h2>Repair Your Old Stuff</h2>
-      <h3> to Fix The World</h3>
-      <a href="#" class="btn">Ayo Mulai...</a>
-    </div>
-</section>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-<!-- Latar Belakang -->
-<section class="about" id="latarBelakang" >
-    <div class="heading">
-        <h2>Latar Belakang</h2>
-    </div>
-    <div class="content">
-        <div class="contentBx w50" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nam, nesciunt laudantium, magnam quisquam aliquid modi commodi debitis praesentium hic minima voluptatum facilis pariatur corporis ipsa, culpa voluptatem minus earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro minus beatae at! Accusantium sequi dolorum, sapiente praesentium sed sint asperiores vero est consectetur minus iusto alias voluptates vitae fugiat.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet quas nam praesentium, at veniam dolore est illum eaque dicta. Harum, a commodi. Ipsa, tempora molestiae. Sapiente expedita ab facilis!</p>
-        </div>
-        <div class="w50" data-aos="fade-left" data-aos-duration="1000">
-            <img src="15181.jpg" class="img">
-        </div>
-    </div>
-</section>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<!-- Latar Belakang -->
-<section class="about" id="Pengertian" >
-    <div class="heading">
-        <h2>Apa sih itu Repair?</h2>
-    </div>
-    <div class="content">
-        <div class="contentBx w50" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-            <img src="construction-worker-builder-with-tools.jpg" class="img">
-        </div>
-        <div class="w50" data-aos="fade-left" data-aos-duration="1000">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nam, nesciunt laudantium, magnam quisquam aliquid modi commodi debitis praesentium hic minima voluptatum facilis pariatur corporis ipsa, culpa voluptatem minus earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro minus beatae at! Accusantium sequi dolorum, sapiente praesentium sed sint asperiores vero est consectetur minus iusto alias voluptates vitae fugiat.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet quas nam praesentium, at veniam dolore est illum eaque dicta. Harum, a commodi. Ipsa, tempora molestiae. Sapiente expedita ab facilis!</p>
-        </div>
-    </div>
-</section>
+        <title>Less Waste-Multimedia</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Less Waste
+                </a>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#latar" class="nav__link">Latar Belakang</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#steps" class="nav__link">5R</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#team" class="nav__link">Team</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
 
-<!-- 6R -->
-<section class="re6" id="re6">
-    <div class="heading white" style="color: white;">
-        <h2>Kelebihan Repair</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nulla minima eaque exercitationem rerum, asperiores impedit quae quidem quibusdam voluptas </p>
-    </div>
-  
-    <div class="container">
-        <div class="box" data-aos="flip-left">
-            <span></span>
-            <div class="content">
-                <h2>Card 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae rem mollitia laborum, 
-                    voluptates quisquam reprehenderit </p>
-            </div>
-        </div>
-        <div class="box" data-aos="flip-left">
-            <span></span>
-            <div class="content">
-                <h2>Card 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae rem mollitia laborum, 
-                    voluptates quisquam reprehenderit </p>
-            </div>
-        </div>
-        <div class="box" data-aos="flip-left">
-            <span></span>
-            <div class="content">
-                <h2>Card 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae rem mollitia laborum, 
-                    voluptates quisquam reprehenderit </p>
-            </div>
-        </div>
-        <div class="box" data-aos="flip-left">
-            <span></span>
-            <div class="content">
-                <h2>Card 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae rem mollitia laborum, 
-                    voluptates quisquam reprehenderit </p>
-            </div>
-        </div>
-        <div class="box" data-aos="flip-left">
-            <span></span>
-            <div class="content">
-                <h2>Card 5</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae rem mollitia laborum, 
-                    voluptates quisquam reprehenderit </p>
-            </div>
-        </div>
-        <div class="box" data-aos="flip-left">
-            <span></span>
-            <div class="content">
-                <h2>Card 6</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae rem mollitia laborum, 
-                    voluptates quisquam reprehenderit </p>
-            </div>
-        </div>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
-    </div>    
-</section>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-<!-- Contact -->
-<section class="contact" id="contact">
-  <div class="heading white">
-      <h2>Contact Us</h2>
-  </div>
-  <div class="content">
-      <div class="contactInfo">
-          <h3>Contact Info</h3>
-          <div class="contactInfoBx">
-              <div class="box">
-                  <div class="icon1">
-                      <i class="fa fa-map-marker"></i>
-                  </div>
-                  <div class="text">
-                      <h3>Address</h3>
-                      <p>Perumahan Griya Peganden Asri,<br>Manyar, Gresik,<br>60243</p>
-                  </div>
-              </div>
-              <div class="box">
-                  <div class="icon1">
-                      <i class="fa fa-phone"></i>
-                  </div>
-                  <div class="text">
-                      <h3>Phone</h3>
-                      <p>088217153101</p>
-                  </div>
-              </div>
-              <div class="box">
-                  <div class="icon1">
-                      <i class="fa fa-envelope-o"></i>
-                  </div>
-                  <div class="text">
-                      <h3>Email</h3>
-                      <p>multimedia-kel1@gmail.com</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="formBx">
-          <form>
-              <h3>Message Me</h3>
-              <input type="text" name="" placeholder="Full Name">
-              <input type="email" name="" placeholder="Email">
-              <textarea placeholder="Your Message"></textarea>
-              <input type="submit" value="Send">
-          </form>
-      </div>
-  </div>
-</section>
-<div class="copyright">
-  <p>Copyrigt © 2021 Multimedia Kelompok 1. All Right Reserved.</p>
-</div>
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home1.png" alt="" class="home__img">
 
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Less Waste In The <br> Neighborhood
+                        </h1>
+                        <p class="home__description">
+                        Take care of your environment to create a healthy environment.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
 
-<script type="text/javascript">
-  window.addEventListener('scroll', function(){
-      var header = document.querySelector('header');
-      header.classList.toggle('sticky', window.scrollY > 0);
-  });
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
 
-  function toggleMenu(){
-      var menuToggle = document.querySelector('.toggle');
-      menuToggle.classList.toggle('active');
-  }
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-</body>
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="latar">
+                <div class="about__container grid">
+                    <img src="assets/img/about1.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Latar Belakang
+                        </h2>
+
+                        <p class="about__description">
+                            Saat ini banyak masyarakat yang senang berbelanja pakaian,
+                            sehingga menyebabkan tumpukan sampah kain. Limbah diolah dengan cara 
+                            pembakaran yang dapat menimbulkan gas beracun yang membahayakan lingkungan.
+                            Adapun solusi yang dapat kita lakukan yaitu dengan cara menerapkan 5R yaitu :
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Refuse
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Reduce
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Reuse
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Recycle
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Repair
+                            </p>
+                        </div>
+
+                        <a href="#steps" class="button--link button--flex">
+                            Lihat Detail <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container" id="steps">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Langkah untuk menerapkan <br> 5R
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Refuse</h3>
+                            <p class="steps__card-description">
+                                Menolak dan menghindari pemakaian barang yang berlebih.<br><br>
+                                Contoh : Menggunakan tas kain sebagai pengganti kantong plastik.
+                            </p><br>
+                            <a href="#" class="button--link button--flex">
+                                Detail <i class="ri-arrow-right-down-line button__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Reduce</h3>
+                            <p class="steps__card-description">
+                                Mengurangi penggunaan produk yang nantinya akan menjadi sampah.<br><br>
+                                Contoh : Mengurangi penggunaan tisu diganti lap kain.
+                            </p><br>
+                            <a href="#" class="button--link button--flex">
+                                Detail <i class="ri-arrow-right-down-line button__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Reuse</h3>
+                            <p class="steps__card-description">
+                                Menggunakan kembali produk yang sudah terpakai.<br><br>
+                                Contoh : Menyimpan pakaian bayi agar dapat digunakan oleh bayi berikutnya.
+                            </p><br>
+                            <a href="#" class="button--link button--flex">
+                                Detail <i class="ri-arrow-right-down-line button__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">04</div>
+                            <h3 class="steps__card-title">Recycle</h3>
+                            <p class="steps__card-description">
+                                Mendaur ulang produk bekas agar bisa menjadi produk yang baru.<br><br>
+                                Contoh : Baju yang sudah robek dijadikan rok perca.
+                            </p><br>
+                            <a href="#" class="button--link button--flex">
+                                Detail <i class="ri-arrow-right-down-line button__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">05</div>
+                            <h3 class="steps__card-title">Repair</h3>
+                            <p class="steps__card-description">
+                                Memperbaiki barang yang rusak agar dapat digunakan kembali.<br><br>
+                                Contoh : Memperbaiki celana yang sobek agar tidak perlu membeli celana yang baru.
+                            </p><br>
+                            <a href="#" class="button--link button--flex">
+                                Detail <i class="ri-arrow-right-down-line button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!--==================== QUESTIONS ====================-->
+             <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    My flowers are falling off or dying?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes leaves to become pale?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes brown crispy leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do i choose a plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change the pots?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why are gnats flying around my plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TEAM ====================-->
+            <section class="product section container" id="team">
+                <h2 class="section__title-center">
+                    Our Team
+                </h2>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product1.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Indah Luthfiah</h3>
+                        <span class="product__price">152011513032</span>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product2.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Crysna Wima Rangga</h3>
+                        <span class="product__price">152011513038</span>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product3.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Rifka Yuliana Putri</h3>
+                        <span class="product__price">152011513042</span>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product4.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Muhammad Hilmi Zain</h3>
+                        <span class="product__price">152011513044</span>
+                    </article>
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product5.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Annisa Aristawati</h3>
+                        <span class="product__price">152011513045</span>
+                    </article>
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product6.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Sabrina Fitri Puspitasari</h3>
+                        <span class="product__price">152011513048</span>
+                    </article>
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product1.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Januar Setyo Nugroho</h3>
+                        <span class="product__price">152011513050</span>
+                    </article>
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product2.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Dwi Zafira Kusbiyantarti</h3>
+                        <span class="product__price">152011513056</span>
+                    </article>
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product3.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Maritza Ahna Damara</h3>
+                        <span class="product__price">152011513057</span>
+                    </article>
+                    
+                </div>
+            </section>
+           
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Contact US
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Address</h3>
+                                <span class="contact__description">
+                                    <i class="ri-user-location-line contact__icon"></i>
+                                    Universitas Airlangga, Surabaya
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +999 888 777
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    user@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <p class="footer__copy">&#169; Multimedia Kelompok 1. All rigths reserved</p>
+        </footer>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
