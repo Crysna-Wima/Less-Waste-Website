@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFUSE</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+     <!--=============== FAVICON ===============-->
+     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+     <!--=============== REMIX ICONS ===============-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <hr/><hr/><hr/><hr/>
+    </div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html#steps" class="nav__link">
+                < Kembali
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#definisi" class="nav__link">Definisi</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#solusi" class="nav__link">Solusi</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#kelebihan" class="nav__link">Kelebihan</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home" style="background-color: rgb(24, 83, 24);">
+                <div class="home__data" style="text-align: center;">
+                    <h1 class="home__title" style="color: white;">
+                        REFUSE
+                    </h1>
+                    <h3 class="home__title" style="font-size: larger; color: white;">
+                        Less Waste In The Neighborhood
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="about section container" id="definisi">
+            <div class="about__container grid">
+                <img src="assets/img/refuse-06.png" alt="" class="about__img" style="margin-top: -20%;">
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Definisi
+                    </h2>
+
+                    <p class="about__description">
+                        Refuse berarti ‘menolak dan menghindari’ pemakaian bahan yang menggunakan plastik dan lebih memilih bahan yang lebih alami. Dikarenakan bahan dengan menggunakan plastik yang sukar terurai tidak seperti bahan alami.
+                    </p>
+                </div>
+            </div>
+        </section>
+>
+        <section class="home section" id="solusi" style="background-color: rgb(24, 83, 24); padding-left: 10%; padding-top: 5%;">
+            <div class="about__container">
+                <div class="about__data">
+                    <h2 class="section__title about__title" style="color: white;">
+                        Solusi
+                    </h2>
+    
+                    <p class="about__details-description" style="color: white; font-size: large;">
+                        <i class="ri-arrow-drop-right-fill about__details-icon" style="color: white;"></i>
+                        Membawa kantong belanja sendiri untuk belanja
+                    </p> <br>
+                    <p class="about__details-description" style="color: white; font-size: large;">
+                        <i class="ri-arrow-drop-right-fill about__details-icon" style="color: white;"></i>
+                        Memakai tempat makan sendiri ketika membeli makan diluar rumah
+                    </p>
+                    <p class="about__details-description" style="color: white; font-size: large;">
+                        <i class="ri-arrow-drop-right-fill about__details-icon" style="color: white;"></i>
+                        Menolak para staff supermarket yang menawarkan suatu produk yang tidak kita butuhkan.                
+                    </p>
+                    <p class="about__details-description" style="color: white; font-size: large;">
+                        <i class="ri-arrow-drop-right-fill about__details-icon" style="color: white;"></i>
+                        Tidak membeli air mineral kemasan, akan lebih baik jika kita menggunakan botol minum sendiri dari rumah                
+                    </p>
+                    <br> <br> <br>
+                    <img src="assets/img/refuse.png" alt="" class="about__img">
+                    <img src="assets/img/refuse1.png" alt="" class="about__img">
+                </div>
+            </div>
+        </section>
+        <section class="home section" id="kelebihan">
+                <h1 style="text-align: center; margin-top: 20px; padding-left: 20%; padding-right: 20%;">
+                    "Dengan menolak penggunaan barang-barang yang merusak alam berarti kita menjaga alam dari kerusakan alam dengan tidak ikut menciptakan sampah."
+                </h1>
+            </div>
+        </section>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <p class="footer__copy">&#169; Kelompok 1 Multimedia. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>
