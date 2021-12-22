@@ -109,7 +109,7 @@
   width: 80px;
   height: 80px;
   margin: -280px 40px 54px  -34px;
-       background:url("http://premiumcoding.com/CSSTricks/fallingLeaves/leaf.png");
+  background-image: url('../img/leaf.png');
   
   -webkit-animation: loader 10s infinite  linear;
   -moz-animation: loader 10s infinite  linear;
